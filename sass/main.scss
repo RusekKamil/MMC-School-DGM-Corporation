@@ -260,47 +260,84 @@ h1.company-name {
 		'box box box';
 	padding: 6em 2em;
 
-	&__title{
+	&__title {
 		grid-area: title;
 	}
 
-	&__boxes{
+	&__boxes {
 		grid-area: box;
 	}
 
-	&__box-img{
+	&__box-img {
 		width: 100%;
 		object-fit: cover;
 		filter: sepia();
 	}
 
-	&__box-title{
+	&__box-title {
 		margin: 0.3em 0;
 		font-size: 2.6rem;
 		color: $gold;
 		font-weight: 200;
 	}
 
-	&__box-text{
+	&__box-text {
 		margin-bottom: 0.5em;
 	}
-	
-	&__box-link{
+
+	&__box-link {
 		display: block;
 		margin-bottom: 2em;
 		font-weight: bold;
 		color: $gold;
 		text-align: right;
 		text-decoration: none;
-		transition: color .3s;
+		transition: color 0.3s;
 
-		&:hover{
+		&:hover {
 			color: $darkgold;
 		}
 	}
 
-	&__bg-icon{
+	&__bg-icon {
 		display: none;
+	}
+}
+
+// plans
+
+.plans {
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box {
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $dark;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $darker;
+			border: 1px solid $gold;
+		}
+	}
+
+	&__item {
+		margin: 1em 0;
+	}
+
+	&__item-icon {
+		width: 50px;
+	}
+	
+	&__item-name {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
 	}
 }
 
